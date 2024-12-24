@@ -24,7 +24,7 @@ A simple to-do list web application built with **Python (Flask)**, **MongoDB**, 
 
 2. **Navigate to the folder**:
     ```bash
-    cd to-do-list-app
+    cd To-do-list
     ```
 
 3. **Activate the virtual environment**:
