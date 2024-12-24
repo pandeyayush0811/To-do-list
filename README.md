@@ -19,7 +19,7 @@ A simple to-do list web application built with **Python (Flask)**, **MongoDB**, 
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/to-do-list.git
+    git clone https://github.com/pandeyayush0811/To-do-list.git
     ```
 
 2. **Navigate to the folder**:
