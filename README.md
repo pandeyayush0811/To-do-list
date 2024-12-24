@@ -8,7 +8,6 @@ A simple to-do list web application built with **Python (Flask)**, **MongoDB**, 
 - **Mark task as completed**: Users can mark tasks as completed.
 - **Delete task**: Users can delete tasks from the list.
 
-
 ## Technologies Used
 
 - **Python**: Backend language used with Flask framework.
@@ -16,70 +15,63 @@ A simple to-do list web application built with **Python (Flask)**, **MongoDB**, 
 - **MongoDB**: NoSQL database to store tasks.
 - **HTML/CSS**: Frontend to display and interact with tasks.
 
+## Installation
 
-
-## Installation:
-1. Clone the repository:
+1. **Clone the repository**:
     ```bash
     git clone https://github.com/your-username/to-do-list.git
     ```
 
- 
-2. Navigate to the folder
-```bash
+2. **Navigate to the folder**:
+    ```bash
     cd to-do-list-app
     ```
-3. Activate the virtual environment
 
-    ->for windows :
-     ```bash
-    python -m venv venv
-    ```
-    -> Activate the Environment
-     ```bash
-    venv\Scripts\activate
-    ```
-        
+3. **Activate the virtual environment**:
 
-4. Install dependencies:
+    - For Windows:
+     ```bash
+     python -m venv venv
+     ```
+
+    - Activate the environment:
+     ```bash
+     venv\Scripts\activate
+     ```
+
+4. **Install dependencies**:
     ```bash
     pip install -r requirements.txt
     ```
 
-5. Set up MongoDB:
+5. **Set up MongoDB**:
+
     - Make sure MongoDB is installed and running on your system.
 
-    Use config.py file
-    If you're not using .env files, you can manually update the MongoDB connection in the config.py file.
+    - Use the `config.py` file:
+      If you're not using `.env` files, you can manually update the MongoDB connection in the `config.py` file.
+      
+      Open the `config.py` file and find the section where MongoDB URI is defined (e.g., `MONGO_URI`). Update the value of `MONGO_URI`:
+      
+      ```python
+      class Config:
+          MONGO_URI = 'mongodb://localhost:27017/todolist'  # Update this to your MongoDB connection string
+      ```
+      Replace `localhost:27017` with your server's address if you're connecting to a remote MongoDB instance.
 
-    Open the config.py file.
-    Find the section where MongoDB URI is defined (e.g., MONGO_URI).
-    Update the value of MONGO_URI:
-
-    ```bash
-    class Config:
-    MONGO_URI = 'mongodb://localhost:27017/todolist'  # Update this to your MongoDB connection string
-    ```
-    Make sure to replace localhost:27017 with your server's address if you're connecting to a remote MongoDB instance.
-
-
-6. Run the app:
+6. **Run the app**:
     ```bash
     python run.py
     ```
 
-7. Access the app:
+7. **Access the app**:
     Open your browser and go to `http://127.0.0.1:5000/`.
 
+## License
 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-License : 
-This project is licensed under the MIT License - see the LICENSE file for details.
+## Contributions
 
-
-## Contributions:
 Feel free to fork this repository and submit pull requests.
-
-
-
-
+123456
